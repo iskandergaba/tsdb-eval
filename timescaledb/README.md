@@ -1,5 +1,5 @@
 # [TimescaleDB](https://www.timescale.com)
-This demo the user is on Ubuntu (or a Debian Linux distribution at least)
+This demo assumes the user is on Ubuntu (or a Debian Linux distribution at least)
 
 ## Requirements
 - Docker
