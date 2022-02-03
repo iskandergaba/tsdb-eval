@@ -79,7 +79,7 @@ public class TSDBCreator {
         try (var stmt = conn.createStatement()) {
             stmt.execute("""
                     SELECT add_continuous_aggregate_policy('sys_load_hourly',
-                    start_offset => INTERVAL '1 month',
+                    start_offset => INTERVAL '24 hours',
                     end_offset => INTERVAL '1 hour',
                     schedule_interval => INTERVAL '1 minute');
                     """);
