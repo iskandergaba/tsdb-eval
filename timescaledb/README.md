@@ -9,13 +9,10 @@ This demo assumes the user is on Ubuntu (or a Debian Linux distribution at least
 	- [PostgreSQL JDBC](https://jdbc.postgresql.org)
 - Python 3
 	- [psycopg2](https://www.psycopg.org)
-```bash
-pip install psycopg2-binary
-```
-
 	- [pandas](https://pandas.pydata.org)
+
 ```bash
-pip install pandas
+pip install psycopg2-binary pandas
 ```
 
 - PostgreSQL
