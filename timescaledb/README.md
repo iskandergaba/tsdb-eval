@@ -70,7 +70,7 @@ cd timescaledb/java/io/github/iskandergaba/java
 
 The PostgreSQL connector is bundled with the program so no need to worry about extra `classpath` configurations.
 
-- **TSDBCreator.java:** Run this program to create a little database schema that simulates taking metrics over the last week.
+- **TSDBCreator.java:** Run this program to create a little database schema that simulates taking metrics over the last year.
 ```bash
 java -cp *.jar TSDBCreator.java
 ```
