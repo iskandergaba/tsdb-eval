@@ -72,12 +72,13 @@ The PostgreSQL connector is bundled with the program so no need to worry about e
 
 - **TSDBCreator.java:** Run this program to create a little database schema that simulates taking metrics over the last year.
 ```bash
-java -cp *.jar TSDBCreator.java
+java -cp ../../../../../../lib/java/*.jar TSDBCreator.java
+
 ```
 
 - **TSDBDropper.java:** Run this program to drop the tables and all the data in `metrics` database.
 ```bash
-java -cp *.jar TSDBDropper.java
+java -cp ../../../../../../lib/java/*.jar TSDBDropper.java
 ```
 
 ### Python
