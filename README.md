@@ -13,8 +13,12 @@ This is a short report comparing the most popular TSDBs to one another along wit
 | Performance				| 3 ⭐ | 3 ⭐ | 4 ⭐ | ? ⭐ |
 | Scalability				| 4 ⭐ | 3 ⭐ | ? ⭐ | ? ⭐ |
 | Maturity					| 5 ⭐ | 3 ⭐ | 2 ⭐ | 3.5 ⭐ |
-| Java client				| ✅ | ✅ | ✅ | ✅ |
-| Python client				| ✅ | ✅ | ✅ | ✅ |
+| Java support				| ✅ | ✅ | ✅ | ✅ |
+| Python support				| ✅ | ✅ | ✅ | ✅ |
+| C/C++ support		| ✅ | ✅ | ✅ | ✅ |
+| C#			| ✅ | ✅ | ✅ | ✅ |
+| Apache Kafka support			| ✅ | ✅ | ✅ | ✅ |
+| Grafana support		| ✅ | ✅ | ✅ | ✅ |
 
 ## Benchmarks
 ### [influxdb-comparisons (by InfluxData)](https://github.com/influxdata/influxdb-comparisons)

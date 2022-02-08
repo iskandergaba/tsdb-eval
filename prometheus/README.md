@@ -7,10 +7,18 @@
 docker pull prom/prometheus
 ```
 
-2. Spin a container instance with telemetry turned off
+2. Spin a container instance that will monitor itself.
 ```
-docker run -d --name prometheus -p 9090:9090 prom/prometheus
+cd prometheus
+docker run -d \
+    --name prometheus \
+    --add-host=hostname:$(hostname -I) \
+    -p 9090:9090 \
+    -v ./prometheus.yml:/etc/prometheus/prometheus.yml \
+    prom/prometheus
 ```
+
+3. Give it a couple of minutes so that some data is collected, then head to [http://localhost:9090](http://localhost:9090), select a time series like `scrape_duration_seconds` for instance and take a look at its graph.
 ## Set the Database
 
 ## Run the Code
