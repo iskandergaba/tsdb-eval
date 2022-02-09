@@ -3,7 +3,7 @@ import time
 import psutil
 
 UPDATE_PERIOD = 1
-SYSTEM_USAGE = prometheus_client.Gauge('system_usage',
+SYSTEM_USAGE = prometheus_client.Gauge('sys_load',
                                        'Hold current system resource usage',
                                        ['resource_type'])
 

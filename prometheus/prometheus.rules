@@ -1,0 +1,29 @@
+groups:
+- name: cpu
+  rules:
+  - record: sys_load:CPU:rate1m
+    expr: avg by (job, instance, mode) (rate(sys_load{resource_type="CPU"}[1m]))
+  - record: sys_load:CPU:rate10m
+    expr: avg by (job, instance, mode) (rate(sys_load{resource_type="CPU"}[10m]))
+  - record: sys_load:CPU:rate10m
+    expr: avg by (job, instance, mode) (rate(sys_load{resource_type="CPU"}[1h]))
+  - record: sys_load:CPU:rate10m
+    expr: avg by (job, instance, mode) (rate(sys_load{resource_type="CPU"}[6h]))
+  - record: sys_load:CPU:rate10m
+    expr: avg by (job, instance, mode) (rate(sys_load{resource_type="CPU"}[12h]))
+  - record: sys_load:CPU:rate10m
+    expr: avg by (job, instance, mode) (rate(sys_load{resource_type="CPU"}[24h]))
+- name: Memory
+  rules:
+  - record: sys_load:Memory:rate1m
+    expr: avg by (job, instance, mode) (rate(sys_load{resource_type="Memory"}[1m]))
+  - record: sys_load:Memory:rate10m
+    expr: avg by (job, instance, mode) (rate(sys_load{resource_type="Memory"}[10m]))
+  - record: sys_load:Memory:rate10m
+    expr: avg by (job, instance, mode) (rate(sys_load{resource_type="Memory"}[1h]))
+  - record: sys_load:Memory:rate10m
+    expr: avg by (job, instance, mode) (rate(sys_load{resource_type="Memory"}[6h]))
+  - record: sys_load:Memory:rate10m
+    expr: avg by (job, instance, mode) (rate(sys_load{resource_type="Memory"}[12h]))
+  - record: sys_load:Memory:rate10m
+    expr: avg by (job, instance, mode) (rate(sys_load{resource_type="Memory"}[24h]))

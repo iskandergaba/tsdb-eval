@@ -15,6 +15,7 @@ docker run -d \
     --add-host=hostname:$(hostname -I) \
     -p 9090:9090 \
     -v ./prometheus.yml:/etc/prometheus/prometheus.yml \
+    -v ./prometheus.rules:/etc/prometheus/prometheus.rules \
     prom/prometheus
 ```
 
