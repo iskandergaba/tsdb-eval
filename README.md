@@ -14,7 +14,7 @@ This is a short report comparing the most popular TSDBs to one another along wit
 | Scalability				| 4 ⭐ | 3 ⭐ | ? ⭐ | ? ⭐ |
 | Maturity					| 5 ⭐ | 3 ⭐ | 2 ⭐ | 4 ⭐ |
 | Learning curve			| 🟢 | 🟡 | 🔴 | 🔴 |
-| Java support				| 🟢 | 🟢 | 🟢 | 🟢 |
+| Java support				| 🟢 | 🟢 | 🟢 | 🟡 [OSGi incompatible](https://github.com/prometheus/client_java/issues/533) |
 | Python support			| 🟢 | 🟢 | 🟢 | 🟢 |
 | C/C++ support				| 🟢 | ? | ? | ? |
 | C# support				| 🟢 | ? | ? | ? |
