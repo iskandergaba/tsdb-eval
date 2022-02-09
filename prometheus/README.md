@@ -24,6 +24,8 @@ docker run -d \
 
 3. You should now be able to access the dashboard through [http://localhost:9090](http://localhost:9090). If you go to `Status -> Targets`, you should see that a target under the name `http://hostname:8000` that is down. That is because we are yet to start a server at [http://localhost:8000](http://localhost:8000) that emits system load metrics. `hostname` is set inside the container's `/etc/hosts` to the machine IP address so that Prometheus in the container can access the localhost of the hosting machine where the metrics server is running.
 
+4. Once the container is deployed, you can always add/remove/modify recording rules in `prometheus.rules.yml` and/or add/remve/modify metrics recording targets in `prometheus.yml` without ever needing to redeploy, in most cases.
+
 ## Run the Code
 ### Python
 - To start the metrics server, run the code in `server.py`. This will start a server that will expose the machines CPU and Memory usage values every second.
