@@ -7,7 +7,7 @@ global:
     monitor: 'demo-monitor'
 
 rule_files:
-  - '/etc/prometheus/prometheus.rules'
+  - '/etc/prometheus/prometheus.rules.yml'
 
 # A scrape configuration containing two endpoints to scrape:
 # Here it's Prometheus itself.
