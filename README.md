@@ -16,10 +16,10 @@ This is a short report comparing the most popular TSDBs to one another along wit
 | Learning curve			| 🟢 | 🟡 | 🔴 | 🔴 |
 | Java support				| 🟢 | 🟢 | 🟢 | 🟢 |
 | Python support			| 🟢 | 🟢 | 🟢 | 🟢 |
-| C/C++ support				| 🟢 | 🟢 | 🟢 | 🟢 |
-| C# support				| 🟢 | 🟢 | 🟢 | 🟢 |
-| Apache Kafka support		| 🟢 | 🟢 | 🟢 | 🟢 |
-| Grafana support			| 🟢 | 🟢 | 🟢 | 🟢 |
+| C/C++ support				| 🟢 | ? | ? | ? |
+| C# support				| 🟢 | ? | ? | ? |
+| Apache Kafka support		| ? | ? | ? | ? |
+| Grafana support			| 🟢 | ? | ? | ? |
 
 ## Benchmarks
 ### [influxdb-comparisons (by InfluxData)](https://github.com/influxdata/influxdb-comparisons)
