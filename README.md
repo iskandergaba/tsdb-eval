@@ -16,6 +16,7 @@ This is a short report comparing the most popular TSDBs to one another along wit
 | Apache Kafka support		| 🟢 | 🟢 | 🟢 | 🟢 |
 | Grafana support			| 🟢 | 🟢 | 🟢 | 🟢 |
 | Learning curve			| 🟢 | 🔴 | 🟡 | 🔴 |
+| Community					| ? | ? | ? | ? |
 | Data Compression			| 3 ⭐ | 4 ⭐ | 4 ⭐ | 4 ⭐ |
 | Performance				| 3 ⭐ | 3 ⭐ | 4 ⭐ | 4 ⭐ |
 | Scalability				| 4 ⭐ | 3 ⭐ | ? ⭐ | ? ⭐ |
