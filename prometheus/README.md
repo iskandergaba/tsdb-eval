@@ -30,7 +30,7 @@ docker run -d \
 ### Python
 - To start the metrics server, run the code in `server.py`. This will start a server that will expose the machines CPU and Memory usage values every second.
 ```bash
-python server.py 
+python python/server.py 
 ```
 
 - If you go back to the dashboard on [http://localhost:9090](http://localhost:9090) and navigate to `Status -> Targets`, you will see that the target  `http://hostname:8000`. You can now query `sys_load` and plot the machine's CPU and memory usaage over time. Provided that enough time has elapsed for the aggregation to occur, you can also query `sys_load:CPU:rate1m`, `sys_load:CPU:rate10m`, `sys_load:CPU:rate1h`, `sys_load:CPU:rate6h`, `sys_load:CPU:rate12h`, and `sys_load:CPU:rate24h` which are CPU load aggregation continuously computed over the intervals of one minute, ten minutes, one hour, six hours, twelve hours and one day, respectively. The same goes for `sys_load:Memory:rate1m`, `sys_load:Memory:rate10m`, `sys_load:Memory:rate1h`, `sys_load:Memory:rate6h`, `sys_load:Memory:rate12h`, and `sys_load:Memory:rate24h` for memory usage.
