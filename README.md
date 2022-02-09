@@ -13,10 +13,11 @@ This is a short report comparing the most popular TSDBs to one another along wit
 | Performance				| 3 ⭐ | 3 ⭐ | 4 ⭐ | 4 ⭐ |
 | Scalability				| 4 ⭐ | 3 ⭐ | ? ⭐ | ? ⭐ |
 | Maturity					| 5 ⭐ | 3 ⭐ | 2 ⭐ | 4 ⭐ |
+| Learning curve			| 🟢 | 🟡 | 🔴 | 🔴 |
 | Java support				| 🟢 | 🟢 | 🟢 | 🟢 |
 | Python support			| 🟢 | 🟢 | 🟢 | 🟢 |
 | C/C++ support				| 🟢 | 🟢 | 🟢 | 🟢 |
-| C#						| 🟢 | 🟢 | 🟢 | 🟢 |
+| C# support				| 🟢 | 🟢 | 🟢 | 🟢 |
 | Apache Kafka support		| 🟢 | 🟢 | 🟢 | 🟢 |
 | Grafana support			| 🟢 | 🟢 | 🟢 | 🟢 |
 
