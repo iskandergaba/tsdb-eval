@@ -9,17 +9,17 @@ This is a short report comparing the most popular TSDBs to one another along wit
 | Data model 			    | SQL ([PostgreSQL](https://docs.timescale.com/timescaledb/latest/overview)) | NoSQL (Custom<sup>[1](https://medium.com/dataseries/analysis-of-the-storage-mechanism-in-influxdb-b84d686f3697), [2](https://docs.influxdata.com/influxdb/v2.1/reference/internals/storage-engine)</sup>) | NoSQL ([Column-based](https://questdb.io/docs/concept/storage-model)) | NoSQL ([TSDB format](https://prometheus.io/docs/prometheus/latest/storage)) |
 | Data Retention Settings 	| 🟢 [Auto](https://docs.timescale.com/timescaledb/latest/getting-started/data-retention) | 🟢 [Auto](https://docs.influxdata.com/influxdb/v2.1/organizations/buckets) | 🟡 [Manual](https://questdb.io/docs/operations/data-retention) | 🟡 [Limited](https://stackoverflow.com/questions/69630832/how-to-store-data-in-prometheus-with-different-retention-time-per-job-or-targets) |
 | Continuous Aggregation			| 🟢 [Auto](https://docs.timescale.com/timescaledb/latest/getting-started/create-cagg/) | 🟢 [Auto](https://docs.influxdata.com/influxdb/v2.1/process-data/get-started) | 🟡 [Manual](https://questdb.io/docs/reference/sql/sample-by) | 🟢 [Auto](https://prometheus.io/docs/prometheus/latest/configuration/recording_rules) |
+| Java support				| 🟢 | 🟢 | 🟢 | 🟡 [OSGi incompatible](https://github.com/prometheus/client_java/issues/533) |
+| Python support			| 🟢 | 🟢 | 🟢 | 🟢 |
+| C/C++ support				| 🟢 | 🔴 | 🟢 | 🟡 (Unofficial) |
+| C# support				| 🟢 | 🟢 | 🟢 | 🔴 |
+| Apache Kafka support		| 🟢 | 🟢 | 🟢 | 🟢 |
+| Grafana support			| 🟢 | 🟢 | 🟢 | 🟢 |
+| Learning curve			| 🟢 | 🔴 | 🟡 | 🔴 |
 | Data Compression			| 3 ⭐ | 4 ⭐ | 4 ⭐ | 4 ⭐ |
 | Performance				| 3 ⭐ | 3 ⭐ | 4 ⭐ | 4 ⭐ |
 | Scalability				| 4 ⭐ | 3 ⭐ | ? ⭐ | ? ⭐ |
 | Maturity					| 5 ⭐ | 3 ⭐ | 2 ⭐ | 4 ⭐ |
-| Learning curve			| 🟢 | 🟡 | 🔴 | 🔴 |
-| Java support				| 🟢 | 🟢 | 🟢 | 🟡 [OSGi incompatible](https://github.com/prometheus/client_java/issues/533) |
-| Python support			| 🟢 | 🟢 | 🟢 | 🟢 |
-| C/C++ support				| 🟢 | ? | ? | ? |
-| C# support				| 🟢 | ? | ? | ? |
-| Apache Kafka support		| ? | ? | ? | ? |
-| Grafana support			| 🟢 | ? | ? | ? |
 
 ## Benchmarks
 ### [influxdb-comparisons (by InfluxData)](https://github.com/influxdata/influxdb-comparisons)
