@@ -117,10 +117,7 @@ python TSDBPlotter.py &
 ```
 
 ### Lessons Learnt from this demo
-- While attempting to minimize the length of the data considered every aggregation, I stumbled upon this error message:
-```
-DETAIL:  The start and end offsets must cover at least two buckets in the valid time range of type "timestamp with time zone"
-```
+- While attempting to minimize the length of the data considered every aggregation, I stumbled upon this error message: `DETAIL:  The start and end offsets must cover at least two buckets in the valid time range of type "timestamp with time zone"`.
 This meant that the closest start offset I could set for continuous aggregation policies was a little over two time buckets for it to work. So in general, I would advise the aggregation policy be of the following shape:
 ```SQL
 SELECT add_continuous_aggregate_policy('view',
