@@ -41,6 +41,10 @@ def init_db(user, password, host, port, dbname):
     connection.autocommit = True
     cursor = connection.cursor()
 
+    # Add `timescaledb` extension if it does not exist already
+    sql = "CREATE EXTENSION IF NOT EXISTS timescaledb;"
+    cursor.execute(sql)
+
     # Create `cpu_load` table
     sql = """CREATE TABLE cpu_load(
             ts TIMESTAMPTZ NOT NULL,
