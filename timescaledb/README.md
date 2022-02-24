@@ -68,7 +68,7 @@ CREATE EXTENSION IF NOT EXISTS timescaledb;
 #### Java
 - Go to `java` code directory from the root
 ```bash
-cd timescaledb/java/io/github/iskandergaba/db_demo/java
+cd timescaledb/java/io/github/iskandergaba/db_demo/java/io/github/iskandergaba/java
 ```
 
 The PostgreSQL connector is bundled with the program so no need to worry about extra `classpath` configurations.
